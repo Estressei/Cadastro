@@ -20,11 +20,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         'email' => $email
     ];
 
-    // Verifica se a sessão de alunos já existe
     if (!isset($_SESSION['alunos'])) {
         $_SESSION['alunos'] = [];
     }
-    // Adiciona o aluno ao array de alunos
     $_SESSION['alunos'][] = $aluno;
 
     header("Location: cadastrados.php");
