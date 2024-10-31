@@ -1,8 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: Arial, sans-serif;
+    min-height: 100vh;
 }
 
 body {
@@ -12,8 +12,7 @@ body {
 nav {
     background-color: #ff8c00;
     color: white;
-    width: 20%;
-    height: 100vh;
+    width: 10%;
     padding: 20px;
     box-sizing: border-box; /*se definir uma largura de 100px, e +1opx padding e 5px de border, a largura total ainda vai ser 100px e o conteudo vai de ajustar dentro do espaço. */
     display: flex;
@@ -34,15 +33,28 @@ nav p:hover {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
+nav p a {
+    text-decoration: none;
+    color: white;
+}
+
+nav p a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+nav p a:hover {
+    color: white;
+}
+
 section {
     background-color: #faedd1;
-    width: 80%;
-    height: 100vh;
-    padding: 40px;
+    width: 90%;
     box-sizing: border-box;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 form {
@@ -84,4 +96,25 @@ form button {
 
 form button:hover {
     background-color: rgb(255, 140, 0, 0.6);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+th {
+    background-color: #ff8c00;
+    color: white;
+}
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:hover {
+    background-color: #ddd;
 }

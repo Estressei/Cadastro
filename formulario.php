@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Alunos</title>
+    <link rel="stylesheet" type="text/css" href="cadastro.css">
+</head>
+<body>
+    <nav>
+        <p>Cadastre-se</p>
+        <p><a href="cadastrados.php">Ver cadastrados</a></p>
+    </nav>
+
+    <section>
+        <form action="cadastro.php" method="POST">
+            <label>Nome:</label>
+            <input type="text" name="nome" placeholder="Digite seu nome" required>
+
+            <label>RA:</label>
+            <input type="text" name="ra" placeholder="Digite seu RA" required>
+
+            <label>Sexo:</label>
+            <div class="radio-group">
+                <input type="radio" name="sexo" value="Masculino" required/> Masculino
+                <input type="radio" name="sexo" value="Feminino"/> Feminino
+                <input type="radio" name="sexo" value="Não-Binario"/> Não-Binário
+            </div>
+
+            <label>Idade:</label>
+            <input type="text" name="idade" placeholder="Digite sua idade" required>
+
+            <label>Endereço:</label>
+            <input type="text" name="endereco" placeholder="Digite seu endereço" required>
+
+            <label>Telefone:</label>
+            <input type="text" name="telefone" placeholder="Digite seu telefone" required>
+
+            <label>E-mail:</label>
+            <input type="text" name="email" placeholder="Digite seu e-mail" required>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+</body>
+</html>
