@@ -6,6 +6,12 @@ if (isset($_POST['excluir_todos'])) {
     header("Location: cadastrados.php");
     exit();
 }
+
+if (isset($_SESSION['alunos']) && !empty($_SESSION['alunos'])) {
+    usort($_SESSION['alunos'], function($a, $b) {
+        return $a['ra'] <=> $b['ra'];
+    });
+}
 ?>
 
 <!DOCTYPE html>
