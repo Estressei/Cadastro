@@ -83,7 +83,7 @@ section {
     margin-bottom: 20px;
 }
 
-.formu button {
+button {
     background-color: #ff8c00;
     color: white;
     padding: 10px 20px;
@@ -94,7 +94,7 @@ section {
     transition: background-color 0.3s;
 }
 
-.formu button:hover {
+button:hover {
     background-color: rgb(255, 140, 0, 0.6);
 }
 
@@ -119,28 +119,9 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 
-tr:hover {
-    background-color: #ddd;
-}
-
 .excluir {
     margin-top: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
-}
-
-.excluir button {
-    background-color: #ff8c00;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.excluir button:hover {
-    background-color: rgb(255, 140, 0, 0.6);
 }
