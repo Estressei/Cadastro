@@ -23,7 +23,7 @@ if (isset($_SESSION['alunos']) && !empty($_SESSION['alunos'])) {
 </head>
 <body>
     <nav>
-        <p><a href="formulario.php">Cadastre-se</a></p>
+        <p><a href="formulario.html">Cadastre-se</a></p>
         <p>Ver cadastrados</p>
     </nav>
 
