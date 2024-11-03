@@ -12,7 +12,7 @@ body {
 nav {
     background-color: #ff8c00;
     color: white;
-    width: 10%;
+    width: 17%;
     padding: 20px;
     box-sizing: border-box; /*se definir uma largura de 100px, e +1opx padding e 5px de border, a largura total ainda vai ser 100px e o conteudo vai de ajustar dentro do espaço. */
     display: flex;
@@ -49,7 +49,7 @@ nav p a:hover {
 
 section {
     background-color: #faedd1;
-    width: 90%;
+    width: 83%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -57,7 +57,7 @@ section {
     justify-content: center;
 }
 
-form {
+.formu {
     background-color: #f8f2e5;
     padding: 30px;
     border-radius: 10px;
@@ -66,11 +66,11 @@ form {
     max-width: 400px;
 }
 
-form label {
+.formu label {
     font-weight: bold;
 }
 
-form input[type="text"] {
+.formu input[type="text"] {
     width: 100%;
     padding: 10px;
     margin: 7px 0 20px 0;
@@ -79,11 +79,11 @@ form input[type="text"] {
     box-sizing: border-box;
 }
 
-form .radio-group {
+.formu .radio-group {
     margin-bottom: 20px;
 }
 
-form button {
+.formu button {
     background-color: #ff8c00;
     color: white;
     padding: 10px 20px;
@@ -94,27 +94,53 @@ form button {
     transition: background-color 0.3s;
 }
 
-form button:hover {
+.formu button:hover {
     background-color: rgb(255, 140, 0, 0.6);
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-left: 20px;
 }
+
 th, td {
     padding: 12px;
     border: 1px solid #ddd;
     text-align: left;
 }
+
 th {
     background-color: #ff8c00;
     color: white;
 }
+
 tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+
 tr:hover {
     background-color: #ddd;
+}
+
+.excluir {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.excluir button {
+    background-color: #ff8c00;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.excluir button:hover {
+    background-color: rgb(255, 140, 0, 0.6);
 }

@@ -1,6 +1,13 @@
 <?php
 session_start();
+
+if (isset($_POST['excluir_todos'])) {
+    unset($_SESSION['alunos']);
+    header("Location: cadastrados.php");
+    exit();
+}
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,6 +22,7 @@ session_start();
     </nav>
 
     <section>
+        <h1>Alunos Cadastrados</h1>
         <table>
             <thead>
                 <tr>
@@ -47,6 +55,10 @@ session_start();
                 ?>
             </tbody>
         </table>
+
+        <form method="POST" action="cadastrados.php" class="excluir">
+            <button type="submit" name="excluir_todos">Excluir todos os alunos</button>
+        </form>
     </section>
 </body>
 </html>

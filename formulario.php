@@ -12,7 +12,7 @@
     </nav>
 
     <section>
-        <form action="cadastro.php" method="POST">
+        <form action="cadastro.php" method="POST" class="formu">
             <label>Nome:</label>
             <input type="text" name="nome" placeholder="Digite seu nome" required>
 

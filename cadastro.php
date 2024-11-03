@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
     $_SESSION['alunos'][] = $aluno;
 
-    header("Location: cadastrados.php");
+    header("Location: formulario.php");
     exit();
 }
 ?>
